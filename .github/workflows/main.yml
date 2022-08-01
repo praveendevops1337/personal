@@ -25,11 +25,11 @@ jobs:
           
       - name: checking java version
         run: |
-          java -version
+          java --version
           
       - name: checking java version
         run: |
-          git -version 
+          git --version 
        
       - name: checking terraform
         run: |
