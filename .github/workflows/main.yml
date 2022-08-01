@@ -31,7 +31,4 @@ jobs:
         run: |
           git --version 
        
-      - name: checking terraform
-        run: |
-          terrform -version 
-          
+      
