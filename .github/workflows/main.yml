@@ -1,0 +1,37 @@
+
+
+name: flipkart ci-cd
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: show hello world 
+        run: |
+          echo hello nishant
+          maven --version
+          
+      - name: checking docker version
+        run: |
+          docker --version
+          
+      - name: checking java version
+        run: |
+          java -version
+          
+      - name: checking java version
+        run: |
+          git -version 
+       
+      - name: checking terraform
+        run: |
+          terrform -version 
+          
