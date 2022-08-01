@@ -17,7 +17,7 @@ jobs:
       - name: show hello world 
         run: |
           echo hello nishant
-          maven --version
+           mvn --version
           
       - name: checking docker version
         run: |
